@@ -3,7 +3,7 @@ name: Docker image buildx and push
 on:
   push:
     branches:
-      - 'main'
+      - 'master'
 
 jobs:
   docker:
@@ -26,4 +26,4 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           push: true
-          tags: jtywfg/flask-redis :latest
+          tags: wwffggle/flask-redis :latest
