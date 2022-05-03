@@ -18,7 +18,7 @@ jobs:
         run: docker login -u ${{ secrets.DOCKERHUB_USERNAME }} -p ${{ secrets.DOCKERHUB_PASSWORD }}
       -
         name: docker tag
-        run: docker tag  jtywfg/flask-redis
+        run: docker tag  jtywfg/flask-redis flask-redis
       -
         name: push to dockerhub
         run: docker push flask-redis wwffggle/flask-redis
